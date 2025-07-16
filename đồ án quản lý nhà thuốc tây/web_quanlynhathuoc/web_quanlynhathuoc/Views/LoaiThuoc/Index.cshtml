@@ -1,0 +1,40 @@
+﻿@model IEnumerable<web_quanlynhathuoc.Models.LoaiThuoc>
+
+@{
+    ViewData["Title"] = "Danh sách loại thuốc";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="text-info">📋 Danh sách loại thuốc</h3>
+        <a asp-action="Create" class="btn btn-success">➕ Thêm mới</a>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover shadow-sm bg-white">
+            <thead class="thead-light">
+                <tr class="text-center">
+                    <th scope="col">Mã loại</th>
+                    <th scope="col">Tên loại</th>
+                    <th scope="col">Mã NCC</th>
+                    <th scope="col">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center">@item.MaLoaiThuoc_ID</td>
+                        <td>@item.TenLoaiThuoc</td>
+                        <td class="text-center">@item.MaNCC_ID</td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@item.MaLoaiThuoc_ID" class="btn btn-sm btn-warning">✏️ Sửa</a>
+                            <a asp-action="Delete" asp-route-id="@item.MaLoaiThuoc_ID" class="btn btn-sm btn-danger">🗑️ Xóa</a>
+                            <a asp-action="Details" asp-route-id="@item.MaLoaiThuoc_ID" class="btn btn-sm btn-info">🔍 Chi tiết</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

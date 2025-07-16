@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Thống kê doanh thu theo ngày";
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-4">📅 @ViewData["Title"]</h2>
+
+    <form method="get" class="row g-3 align-items-end mb-4 border p-3 rounded shadow-sm bg-light">
+        <div class="col-md-4">
+            <label class="form-label fw-bold">Chọn ngày:</label>
+            <input type="date" name="ngay" value="@ViewBag.Ngay.ToString("yyyy-MM-dd")" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary w-100">
+                🔍 Xem thống kê
+            </button>
+        </div>
+    </form>
+
+    <div class="alert alert-info fw-bold">
+        📈 Doanh thu ngày <span class="text-dark">@ViewBag.Ngay.ToString("dd/MM/yyyy")</span>:
+        <span class="text-success">@ViewBag.DoanhThu.ToString("N0") đ</span>
+    </div>
+</div>

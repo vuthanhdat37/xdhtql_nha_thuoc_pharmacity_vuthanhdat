@@ -1,0 +1,43 @@
+﻿@model web_quanlynhathuoc.Models.NhanVien
+@{
+    ViewData["Title"] = "Chi tiết nhân viên";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-info text-white">
+            <h4 class="mb-0">👨‍⚕️ Chi tiết nhân viên</h4>
+        </div>
+
+        <div class="card-body">
+            <table class="table table-bordered">
+                <tr>
+                    <th style="width: 200px;">👤 Họ tên</th>
+                    <td>@Model.TenNV</td>
+                </tr>
+                <tr>
+                    <th>🚻 Giới tính</th>
+                    <td>@Model.GioiTinh</td>
+                </tr>
+                <tr>
+                    <th>🎂 Ngày sinh</th>
+                    <td>@Model.NgaySinh.ToString("dd/MM/yyyy")</td>
+                </tr>
+                <tr>
+                    <th>📞 Số điện thoại</th>
+                    <td>@Model.SDT</td>
+                </tr>
+                <tr>
+                    <th>🏠 Địa chỉ</th>
+                    <td>@Model.DiaChi</td>
+                </tr>
+                <tr>
+                    <th>🏪 Mã cửa hàng</th>
+                    <td>@Model.MaCH_ID</td>
+                </tr>
+            </table>
+
+            <a asp-action="Index" class="btn btn-secondary mt-2">↩️ Quay lại</a>
+        </div>
+    </div>
+</div>

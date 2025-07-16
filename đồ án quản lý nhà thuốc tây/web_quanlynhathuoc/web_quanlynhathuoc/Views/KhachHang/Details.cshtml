@@ -1,0 +1,24 @@
+﻿@model web_quanlynhathuoc.Models.KhachHang
+
+<h2>Chi tiết khách hàng</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-3">Tên khách hàng</dt>
+        <dd class="col-sm-9">@Model.TenKH</dd>
+
+        <dt class="col-sm-3">Giới tính</dt>
+        <dd class="col-sm-9">@Model.GioiTinh</dd>
+
+        <dt class="col-sm-3">Ngày sinh</dt>
+        <dd class="col-sm-9">@Model.NgaySinh.ToShortDateString()</dd>
+
+        <dt class="col-sm-3">Số điện thoại</dt>
+        <dd class="col-sm-9">@Model.SDT</dd>
+
+        <dt class="col-sm-3">Bệnh lý nền</dt>
+        <dd class="col-sm-9">@Model.BenhLyNen</dd>
+    </dl>
+</div>
+
+<a asp-action="Index">Quay lại danh sách</a>

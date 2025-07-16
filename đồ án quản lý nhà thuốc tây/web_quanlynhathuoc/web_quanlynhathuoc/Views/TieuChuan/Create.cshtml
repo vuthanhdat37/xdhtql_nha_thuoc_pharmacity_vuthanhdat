@@ -1,0 +1,21 @@
+﻿@model web_quanlynhathuoc.Models.TieuChuan
+<h2>Thêm tiêu chuẩn</h2>
+<form asp-action="Create">
+    <div class="form-group">
+        <label>Tên TC</label>
+        <input asp-for="TenTC" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Mô tả</label>
+        <textarea asp-for="MoTa" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Loại TC</label>
+        <input asp-for="LoaiTC" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Ngày đánh giá</label>
+        <input asp-for="NgayDanhGia" type="date" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Lưu</button>
+</form>

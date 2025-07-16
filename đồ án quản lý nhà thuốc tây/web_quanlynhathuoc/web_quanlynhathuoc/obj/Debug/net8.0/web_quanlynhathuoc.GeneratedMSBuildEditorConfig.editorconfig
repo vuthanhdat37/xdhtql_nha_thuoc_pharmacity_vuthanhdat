@@ -1,0 +1,267 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = web_quanlynhathuoc
+build_property.RootNamespace = web_quanlynhathuoc
+build_property.ProjectDir = C:\Users\DAT\OneDrive\Máy tính\đồ án quản lý nhà thuốc tây\web_quanlynhathuoc\web_quanlynhathuoc\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\DAT\OneDrive\Máy tính\đồ án quản lý nhà thuốc tây\web_quanlynhathuoc\web_quanlynhathuoc
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/CuaHang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VhSGFuZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/CuaHang/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VhSGFuZ1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/CuaHang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VhSGFuZ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/CuaHang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VhSGFuZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/CuaHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VhSGFuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/HoaDon/ChiTiet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uXENoaVRpZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/HoaDon/CreateFromPhieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uXENyZWF0ZUZyb21QaGlldS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/HoaDon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/KhachHang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/KhachHang/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/KhachHang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/KhachHang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/KhachHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/LoaiThuoc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVRodW9jXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/LoaiThuoc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVRodW9jXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/LoaiThuoc/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVRodW9jXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/LoaiThuoc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVRodW9jXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/LoaiThuoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVRodW9jXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/NhaCungCap/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/NhaCungCap/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/NhaCungCap/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/NhaCungCap/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/NhaCungCap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/NhanVien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/NhanVien/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/NhanVien/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/NhanVien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/NhanVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/PhieuMuaHang/CapNhatTrangThai.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVNdWFIYW5nXENhcE5oYXRUcmFuZ1RoYWkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/PhieuMuaHang/ChiTiet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVNdWFIYW5nXENoaVRpZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/PhieuMuaHang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVNdWFIYW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/PhieuMuaHang/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVNdWFIYW5nXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/PhieuMuaHang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVNdWFIYW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/PhieuMuaHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXVNdWFIYW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/ThongKe/DoanhThuTheoKhoang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdLZVxEb2FuaFRodVRoZW9LaG9hbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/ThongKe/DoanhThuTheoNgay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdLZVxEb2FuaFRodVRoZW9OZ2F5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/ThongKe/HieuSuatNhanVien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdLZVxIaWV1U3VhdE5oYW5WaWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/ThongKe/ThuocBanChay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdLZVxUaHVvY0JhbkNoYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/ThongKe/ThuocHetHan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdLZVxUaHVvY0hldEhhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/ThongKe/ThuocSapHetHan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdLZVxUaHVvY1NhcEhldEhhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/ThongKe/TonKho.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdLZVxUb25LaG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Thuoc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b2NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Thuoc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b2NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Thuoc/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b2NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Thuoc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b2NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Thuoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b2NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Thuoc/Mua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b2NcTXVhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/TieuChuan/ChiTietTrangThai.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlldUNodWFuXENoaVRpZXRUcmFuZ1RoYWkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/TieuChuan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlldUNodWFuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/TieuChuan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlldUNodWFuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/TieuChuan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlldUNodWFuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/TieuChuan/SuaTrangThai.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlldUNodWFuXFN1YVRyYW5nVGhhaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/TieuChuan/ThemTrangThai.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlldUNodWFuXFRoZW1UcmFuZ1RoYWkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DAT/OneDrive/Máy tính/đồ án quản lý nhà thuốc tây/web_quanlynhathuoc/web_quanlynhathuoc/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uf1zwbbgef

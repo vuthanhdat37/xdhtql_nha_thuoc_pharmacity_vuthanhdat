@@ -1,0 +1,62 @@
+﻿@model web_quanlynhathuoc.Models.CuaHang
+
+@{
+    ViewData["Title"] = "Chỉnh sửa cửa hàng";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-warning text-dark">
+            <h4 class="mb-0">✏️ Chỉnh sửa thông tin cửa hàng</h4>
+        </div>
+
+        <div class="card-body">
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="MaCH_ID" />
+
+                <div class="form-group">
+                    <label><strong>Tên cửa hàng</strong></label>
+                    <input asp-for="TenCH" class="form-control" />
+                    <span asp-validation-for="TenCH" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Địa chỉ</strong></label>
+                    <input asp-for="DiaChi" class="form-control" />
+                    <span asp-validation-for="DiaChi" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Số điện thoại</strong></label>
+                    <input asp-for="SDT" class="form-control" />
+                    <span asp-validation-for="SDT" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Tiêu chuẩn GPP</strong></label>
+                    <input asp-for="TieuChuanGPP" class="form-control" />
+                    <span asp-validation-for="TieuChuanGPP" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Cơ sở vật chất</strong></label>
+                    <input asp-for="CoSoVatChat" class="form-control" />
+                    <span asp-validation-for="CoSoVatChat" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Hoạt động</strong></label>
+                    <input asp-for="HoatDongNhaThuoc" class="form-control" />
+                    <span asp-validation-for="HoatDongNhaThuoc" class="text-danger"></span>
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-success mr-2">💾 Cập nhật</button>
+                    <a asp-action="Index" class="btn btn-secondary">↩️ Quay lại</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

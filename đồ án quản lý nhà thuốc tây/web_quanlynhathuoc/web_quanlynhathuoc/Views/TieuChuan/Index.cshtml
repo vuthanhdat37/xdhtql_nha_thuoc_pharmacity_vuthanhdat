@@ -1,0 +1,43 @@
+﻿@model IEnumerable<web_quanlynhathuoc.Models.TieuChuan>
+
+@{
+    ViewData["Title"] = "Danh sách tiêu chuẩn";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">📋 Danh sách tiêu chuẩn</h4>
+            <a class="btn btn-light text-primary" href="/TieuChuan/Create">➕ Thêm mới</a>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped table-hover table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Tên TC</th>
+                        <th>Mô tả</th>
+                        <th>Loại</th>
+                        <th>Ngày đánh giá</th>
+                        <th class="text-center">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.TenTC</td>
+                            <td>@item.MoTa</td>
+                            <td>@item.LoaiTC</td>
+                            <td>@item.NgayDanhGia.ToString("dd/MM/yyyy")</td>
+                            <td class="text-center">
+                                <a class="btn btn-sm btn-warning" href="/TieuChuan/Edit/@item.MaTC_ID">✏️ Sửa</a>
+                                <a class="btn btn-sm btn-danger" href="/TieuChuan/Delete/@item.MaTC_ID">🗑️ Xóa</a>
+                                <a class="btn btn-sm btn-info" href="/TieuChuan/ChiTietTrangThai/@item.MaTC_ID">📊 Trạng thái</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

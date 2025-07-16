@@ -1,0 +1,41 @@
+﻿@model web_quanlynhathuoc.Models.Thuoc
+
+@{
+    ViewData["Title"] = "Chi tiết thuốc";
+    var tenLoai = ViewBag.TenLoaiThuoc as string ?? "Không xác định";
+}
+
+<div class="container mt-4">
+    <div class="card shadow border-info">
+        <div class="card-header bg-info text-white">
+            <h4>🔍 Thông tin chi tiết thuốc</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Tên thuốc:</dt>
+                <dd class="col-sm-9">@Model.TenThuoc</dd>
+
+                <dt class="col-sm-3">Đơn vị tính:</dt>
+                <dd class="col-sm-9">@Model.DVT</dd>
+
+                <dt class="col-sm-3">Giá nhập:</dt>
+                <dd class="col-sm-9">@Model.GiaNhap.ToString("N0") đ</dd>
+
+                <dt class="col-sm-3">Giá bán:</dt>
+                <dd class="col-sm-9">@Model.GiaBan.ToString("N0") đ</dd>
+
+                <dt class="col-sm-3">Số lượng tồn:</dt>
+                <dd class="col-sm-9">@Model.SLTonKho</dd>
+
+                <dt class="col-sm-3">Loại thuốc:</dt>
+                <dd class="col-sm-9">@tenLoai</dd>
+
+                <dt class="col-sm-3">Ngày hết hạn:</dt>
+                <dd class="col-sm-9">@Model.NgayHetHan.ToString("dd/MM/yyyy")</dd>
+            </dl>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-action="Index" class="btn btn-secondary">↩️ Quay lại</a>
+        </div>
+    </div>
+</div>

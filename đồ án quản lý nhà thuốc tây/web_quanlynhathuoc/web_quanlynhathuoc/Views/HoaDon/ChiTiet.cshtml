@@ -1,0 +1,46 @@
+﻿@model List<web_quanlynhathuoc.Models.CTHD>
+@{
+    ViewData["Title"] = "Chi tiết hóa đơn";
+    var maHD = ViewBag.MaHD;
+    var khachHang = ViewBag.KhachHang;
+    var nhanVien = ViewBag.NhanVien;
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-4" style="font-size: 28px; font-weight: bold;">
+        📄 Chi tiết hóa đơn <strong>#@maHD</strong>
+    </h2>
+
+    <div class="mb-3 p-3 border rounded bg-light">
+        <p style="font-size: 18px;">
+            <strong>👤 Khách hàng:</strong> <span class="text-info">@khachHang</span>
+        </p>
+        <p style="font-size: 18px;">
+            <strong>👨‍💼 Nhân viên lập hóa đơn:</strong> <span class="text-success">@nhanVien</span>
+        </p>
+    </div>
+
+    <table class="table table-bordered table-hover">
+        <thead class="table-primary text-center">
+            <tr>
+                <th style="font-size: 16px;">💊 Tên thuốc</th>
+                <th style="font-size: 16px;">🔢 Số lượng</th>
+                <th style="font-size: 16px;">💰 Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="font-size: 16px;">@item.Thuoc?.TenThuoc</td>
+                    <td class="text-center" style="font-size: 16px;">@item.SLThuoc</td>
+                    <td class="text-end text-danger fw-bold" style="font-size: 16px;">
+                        @item.TongTien.ToString("N0") đ
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a asp-action="Index" class="btn btn-secondary mt-3">← Quay lại danh sách hóa đơn</a>
+</div>

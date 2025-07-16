@@ -1,0 +1,76 @@
+﻿@model List<PhieuMuaHang>
+@{
+    ViewData["Title"] = "Danh sách Phiếu Mua Hàng";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="text-primary">🧾 Danh sách Phiếu Mua Hàng</h2>
+        <a asp-action="Create" class="btn btn-success">➕ Thêm mới</a>
+    </div>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="thead-light text-center bg-light">
+            <tr>
+                <th>Mã</th>
+                <th>📅 Ngày mua</th>
+                <th>👤 Khách hàng</th>
+                <th>💳 Thanh toán</th>
+                <th>📌 Trạng thái</th>
+                <th>💰 Tổng tiền</th>
+                <th>📋 Chi tiết</th>
+                <th>⚙️ Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                <tr class="align-middle text-center">
+                    <td>@p.MaPMH_ID</td>
+                    <td>@p.NgayMuaHang.ToString("dd/MM/yyyy")</td>
+                    <td class="text-left">@p.KhachHang?.TenKH</td>
+                    <td>@p.PTThanhToan</td>
+
+                    <td>
+                        @if (p.TrangThai == "Đã thanh toán")
+                        {
+                            <span class="badge bg-success text-white">Đã thanh toán</span>
+                        }
+                        else if (p.TrangThai == "Chờ thanh toán")
+                        {
+                            <span class="badge bg-warning text-dark">Chờ thanh toán</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary text-white">@p.TrangThai</span>
+                        }
+                    </td>
+
+
+                    <td>@p.TongTien.ToString("N0") đ</td>
+                    <td>
+                        <a asp-action="ChiTiet" asp-route-id="@p.MaPMH_ID" class="btn btn-info btn-sm">🔍 Xem</a>
+                    </td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a asp-action="Edit" asp-route-id="@p.MaPMH_ID"
+                               class="btn btn-sm btn-warning" title="Sửa phiếu mua hàng">✏️</a>
+
+                            <a asp-action="Delete" asp-route-id="@p.MaPMH_ID"
+                               class="btn btn-sm btn-danger" title="Xóa phiếu mua hàng"
+                               onclick="return confirm('Bạn có chắc muốn xoá phiếu này?');">🗑️</a>
+
+                            <a asp-action="CapNhatTrangThai" asp-route-id="@p.MaPMH_ID"
+                               class="btn btn-sm btn-secondary" title="Cập nhật trạng thái">♻️</a>
+
+                            <a asp-controller="HoaDon" asp-action="CreateFromPhieu" asp-route-id="@p.MaPMH_ID"
+                               class="btn btn-sm btn-success" title="Tạo hóa đơn ">📄</a>
+                        </div>
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

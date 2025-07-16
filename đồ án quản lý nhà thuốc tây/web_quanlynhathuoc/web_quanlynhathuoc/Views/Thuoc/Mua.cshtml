@@ -1,0 +1,63 @@
+﻿@model web_quanlynhathuoc.Models.CTPMH
+@{
+    ViewData["Title"] = "Mua thuốc";
+    var thuoc = ViewBag.Thuoc;
+    var donGia = thuoc.GiaBan;
+}
+
+<div class="container mt-4">
+    <div class="card shadow border-info">
+        <div class="card-header bg-info text-white">
+            <h4>Mua thuốc: @thuoc.TenThuoc</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Mua" method="post">
+                <input type="hidden" name="MaThuoc_ID" value="@thuoc.MaThuoc_ID" />
+                <input type="hidden" id="DonGia" value="@donGia" />
+
+                <div class="form-group mb-3">
+                    <label>Khách hàng</label>
+                    <select name="MaKH_ID" class="form-control" asp-items="@(ViewBag.KhachHangList)"></select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Đơn giá</label>
+                    <input type="text" class="form-control" value="@donGia.ToString("N0") đ" readonly />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Số lượng mua</label>
+                    <input type="number" name="SLThuocMua" id="SLThuocMua" class="form-control" required min="1" max="@thuoc.SLTonKho" value="1" />
+                </div>
+
+                <div class="form-group mb-4">
+                    <label>Tổng tiền</label>
+                    <input type="text" id="TongTien" class="form-control" readonly />
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-success">💊 Xác nhận mua</button>
+                    <a asp-controller="Thuoc" asp-action="Index" class="btn btn-secondary">↩️ Hủy</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function formatNumber(n) {
+            return n.toLocaleString('vi-VN') + " đ";
+        }
+
+        function updateTotal() {
+            const donGia = parseFloat(document.getElementById("DonGia").value);
+            const soLuong = parseInt(document.getElementById("SLThuocMua").value || "0");
+            const tongTien = donGia * soLuong;
+            document.getElementById("TongTien").value = formatNumber(tongTien);
+        }
+
+        document.getElementById("SLThuocMua").addEventListener("input", updateTotal);
+        updateTotal();
+    </script>
+}

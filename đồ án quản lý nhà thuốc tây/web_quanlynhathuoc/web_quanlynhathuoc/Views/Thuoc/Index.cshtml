@@ -1,0 +1,45 @@
+﻿@model IEnumerable<web_quanlynhathuoc.Models.Thuoc>
+
+@{
+    ViewData["Title"] = "Danh sách thuốc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4" style="background-color: ##e6f0fa; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <h2 class="text-primary mb-4 text-center">📋 Danh sách thuốc</h2>
+
+    <div class="text-end mb-3">
+        <a asp-action="Create" class="btn btn-success">
+            ➕ Thêm mới
+        </a>
+    </div>
+
+    <table class="table table-hover table-bordered">
+        <thead class="thead-light">
+            <tr class="text-center bg-light">
+                <th>Tên thuốc</th>
+                <th>Giá bán</th>
+                <th>Số lượng tồn</th>
+                <th>Hạn dùng</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="align-middle text-center">
+                    <td>@item.TenThuoc</td>
+                    <td>@item.GiaBan.ToString("N0") đ</td>
+                    <td>@item.SLTonKho</td>
+                    <td>@item.NgayHetHan.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.MaThuoc_ID" class="btn btn-sm btn-warning">✏️ Sửa</a>
+                        <a asp-action="Delete" asp-route-id="@item.MaThuoc_ID" class="btn btn-sm btn-danger">🗑 Xóa</a>
+                        <a asp-action="Details" asp-route-id="@item.MaThuoc_ID" class="btn btn-sm btn-info">🔍 Chi tiết</a>
+                        <a asp-controller="Thuoc" asp-action="Mua" asp-route-id="@item.MaThuoc_ID" class="btn btn-sm btn-success">💊 Mua</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

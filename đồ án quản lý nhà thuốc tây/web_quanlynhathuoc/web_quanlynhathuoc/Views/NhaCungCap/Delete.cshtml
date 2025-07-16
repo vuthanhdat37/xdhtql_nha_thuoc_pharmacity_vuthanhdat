@@ -1,0 +1,13 @@
+﻿@model web_quanlynhathuoc.Models.NhaCungCap
+
+<h2>Xóa nhà cung cấp</h2>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<h4>Bạn có chắc chắn muốn xóa nhà cung cấp <strong>@Model.TenNCC</strong>?</h4>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="MaNCC_ID" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

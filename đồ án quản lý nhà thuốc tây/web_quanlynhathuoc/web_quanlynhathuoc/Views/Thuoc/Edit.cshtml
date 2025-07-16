@@ -1,0 +1,56 @@
+﻿@model web_quanlynhathuoc.Models.Thuoc
+
+<div class="container mt-4">
+    <div class="card border-primary shadow">
+        <div class="card-header bg-primary text-white">
+            <h4>📝 Chỉnh sửa thông tin thuốc</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit">
+                <input type="hidden" asp-for="MaThuoc_ID" />
+
+                <div class="form-group mb-3">
+                    <label>Tên thuốc</label>
+                    <input asp-for="TenThuoc" class="form-control" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Đơn vị tính</label>
+                    <input asp-for="DVT" class="form-control" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Giá nhập</label>
+                    <input asp-for="GiaNhap" class="form-control" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Giá bán</label>
+                    <input asp-for="GiaBan" class="form-control" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Số lượng tồn</label>
+                    <input asp-for="SLTonKho" class="form-control" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Loại thuốc</label>
+                    <select asp-for="MaLoaiThuoc_ID" class="form-control" asp-items="@(ViewBag.LoaiThuocList)">
+                        <option value="">-- Chọn loại thuốc --</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label>Ngày hết hạn</label>
+                    <input asp-for="NgayHetHan" class="form-control" type="date" />
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-success">💾 Lưu thay đổi</button>
+                    <a asp-action="Index" class="btn btn-secondary">↩️ Quay lại</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Top 10 thuốc bán chạy";
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-4">💊 Top 10 thuốc bán chạy</h2>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="table-light text-center">
+            <tr>
+                <th>📦 Tên thuốc</th>
+                <th>📈 Số lượng bán</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.TenThuoc</td>
+                    <td class="text-center fw-bold text-success">@item.TongSoLuong</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

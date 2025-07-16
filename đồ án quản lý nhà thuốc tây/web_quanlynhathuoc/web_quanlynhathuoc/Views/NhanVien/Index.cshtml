@@ -1,0 +1,48 @@
+﻿@model IEnumerable<web_quanlynhathuoc.Models.NhanVien>
+@{
+    ViewData["Title"] = "Danh sách nhân viên";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">📋 Danh sách nhân viên</h4>
+        </div>
+
+        <div class="card-body">
+            <a asp-action="Create" class="btn btn-success mb-3">➕ Thêm nhân viên</a>
+
+            <table class="table table-striped table-hover table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>👤 Tên NV</th>
+                        <th>🚻 Giới tính</th>
+                        <th>🎂 Ngày sinh</th>
+                        <th>📞 SĐT</th>
+                        <th>🏠 Địa chỉ</th>
+                        <th>🏪 Cửa hàng</th>
+                        <th>⚙️ Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.TenNV</td>
+                            <td>@item.GioiTinh</td>
+                            <td>@item.NgaySinh.ToString("dd/MM/yyyy")</td>
+                            <td>@item.SDT</td>
+                            <td>@item.DiaChi</td>
+                            <td>@item.MaCH_ID</td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.MaNV_ID" class="btn btn-sm btn-warning">✏️</a>
+                                <a asp-action="Details" asp-route-id="@item.MaNV_ID" class="btn btn-sm btn-info">👁️</a>
+                                <a asp-action="Delete" asp-route-id="@item.MaNV_ID" class="btn btn-sm btn-danger">🗑️</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

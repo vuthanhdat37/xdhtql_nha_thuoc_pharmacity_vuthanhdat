@@ -1,0 +1,30 @@
+﻿@model web_quanlynhathuoc.Models.KhachHang
+
+<h2>Sửa thông tin khách hàng</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="MaKH_ID" />
+    <div class="form-group">
+        <label>Tên khách hàng</label>
+        <input asp-for="TenKH" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Giới tính</label>
+        <input asp-for="GioiTinh" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Ngày sinh</label>
+        <input asp-for="NgaySinh" type="date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Số điện thoại</label>
+        <input asp-for="SDT" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Bệnh lý nền</label>
+        <input asp-for="BenhLyNen" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+</form>
+
+<a asp-action="Index">Quay lại danh sách</a>

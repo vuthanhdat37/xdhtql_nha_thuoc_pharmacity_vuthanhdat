@@ -1,0 +1,48 @@
+﻿@model IEnumerable<web_quanlynhathuoc.Models.CuaHang>
+
+@{
+    ViewData["Title"] = "Danh sách cửa hàng";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">🏪 Danh sách cửa hàng</h4>
+            <a asp-action="Create" class="btn btn-light text-success">➕ Thêm cửa hàng</a>
+        </div>
+
+        <div class="card-body p-0">
+            <table class="table table-bordered table-striped table-hover mb-0">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Mã</th>
+                        <th>Tên cửa hàng</th>
+                        <th>Địa chỉ</th>
+                        <th>SĐT</th>
+                        <th>GPP</th>
+                        <th>Hoạt động</th>
+                        <th class="text-center">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MaCH_ID</td>
+                            <td>@item.TenCH</td>
+                            <td>@item.DiaChi</td>
+                            <td>@item.SDT</td>
+                            <td>@item.TieuChuanGPP</td>
+                            <td>@item.HoatDongNhaThuoc</td>
+                            <td class="text-center">
+                                <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@item.MaCH_ID">✏️ Sửa</a>
+                                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.MaCH_ID">🗑️ Xóa</a>
+                                <a class="btn btn-sm btn-info" asp-action="Details" asp-route-id="@item.MaCH_ID">🔍 Chi tiết</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

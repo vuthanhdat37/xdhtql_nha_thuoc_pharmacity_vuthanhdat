@@ -1,0 +1,29 @@
+﻿@model web_quanlynhathuoc.Models.CTTC
+
+<h2>Cập nhật trạng thái tiêu chuẩn</h2>
+
+<form asp-action="SuaTrangThai">
+    <input type="hidden" asp-for="MaTC_ID" />
+    <input type="hidden" asp-for="MaCH_ID" />
+
+    <div class="form-group mb-3">
+        <label>Tên cửa hàng</label>
+        <input class="form-control" value="@Model.CuaHang?.TenCH" disabled />
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Tiêu chuẩn</label>
+        <input class="form-control" value="@Model.TieuChuan?.TenTC" disabled />
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Trạng thái</label>
+        <select asp-for="TrangThai" class="form-control">
+            <option value="Đạt" selected="@Model.TrangThai == " Đạt"">Đạt</option>
+            <option value="Đang đánh giá" selected="@Model.TrangThai == " Đang đánh giá"">Đang đánh giá</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">💾 Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary">⬅ Quay lại</a>
+</form>

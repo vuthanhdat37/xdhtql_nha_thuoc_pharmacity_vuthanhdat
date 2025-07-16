@@ -1,0 +1,41 @@
+﻿@model IEnumerable<web_quanlynhathuoc.Models.KhachHang>
+@{
+    ViewData["Title"] = "Danh sách khách hàng";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="text-primary">📋 Danh sách khách hàng</h2>
+        <a class="btn btn-success" href="/KhachHang/Create">➕ Thêm khách hàng</a>
+    </div>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="thead-light">
+            <tr class="text-center">
+                <th>Tên KH</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>SĐT</th>
+                <th>Bệnh lý nền</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var kh in Model)
+            {
+                <tr>
+                    <td>@kh.TenKH</td>
+                    <td>@kh.GioiTinh</td>
+                    <td>@kh.NgaySinh.ToString("dd/MM/yyyy")</td>
+                    <td>@kh.SDT</td>
+                    <td>@kh.BenhLyNen</td>
+                    <td class="text-center">
+                        <a href="/KhachHang/Edit/@kh.MaKH_ID" class="btn btn-sm btn-warning">✏️ Sửa</a>
+                        <a href="/KhachHang/Details/@kh.MaKH_ID" class="btn btn-sm btn-info">🔍 Chi tiết</a>
+                        <a href="/KhachHang/Delete/@kh.MaKH_ID" class="btn btn-sm btn-danger">🗑️ Xoá</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

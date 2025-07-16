@@ -1,0 +1,71 @@
+﻿@model web_quanlynhathuoc.Models.Thuoc
+
+@{
+    ViewData["Title"] = "Thêm thuốc mới";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm border-primary">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Thêm thuốc mới</h4>
+        </div>
+        <div class="card-body">
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+            <form asp-action="Create" method="post">
+                <div class="form-group mb-3">
+                    <label>Tên thuốc</label>
+                    <input asp-for="TenThuoc" class="form-control" />
+                    <span asp-validation-for="TenThuoc" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Đơn vị tính</label>
+                    <input asp-for="DVT" class="form-control" />
+                    <span asp-validation-for="DVT" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Giá nhập</label>
+                    <input asp-for="GiaNhap" class="form-control" />
+                    <span asp-validation-for="GiaNhap" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Giá bán</label>
+                    <input asp-for="GiaBan" class="form-control" />
+                    <span asp-validation-for="GiaBan" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Số lượng tồn</label>
+                    <input asp-for="SLTonKho" class="form-control" />
+                    <span asp-validation-for="SLTonKho" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Loại thuốc</label>
+                    <select asp-for="MaLoaiThuoc_ID" class="form-control" asp-items="ViewBag.LoaiThuocList">
+                        <option value="">-- Chọn loại thuốc --</option>
+                    </select>
+                    <span asp-validation-for="MaLoaiThuoc_ID" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Ngày hết hạn</label>
+                    <input asp-for="NgayHetHan" class="form-control" type="date" />
+                    <span asp-validation-for="NgayHetHan" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-success">💾 Thêm thuốc</button>
+                    <a asp-action="Index" class="btn btn-secondary">↩️ Quay lại</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,20 @@
+﻿@model int
+@{
+    ViewData["Title"] = "Tạo hóa đơn từ phiếu mua hàng";
+}
+
+<h2 class="mb-4 text-primary">🧾 Tạo hóa đơn từ Phiếu #@Model</h2>
+
+<form asp-action="CreateFromPhieu" method="post">
+    <input type="hidden" name="id" value="@Model" />
+
+    <div class="form-group">
+        <label>Chọn nhân viên lập hóa đơn</label>
+        <select name="MaNV_ID" class="form-control" asp-items="ViewBag.NhanVienList">
+            <option value="">-- Chọn nhân viên --</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">✅ Tạo hóa đơn</button>
+    <a asp-action="Index" asp-controller="PhieuMuaHang" class="btn btn-secondary mt-2">↩️ Quay lại</a>
+</form>

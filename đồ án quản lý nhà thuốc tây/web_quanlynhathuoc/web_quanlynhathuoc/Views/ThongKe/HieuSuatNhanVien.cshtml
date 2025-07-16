@@ -1,0 +1,28 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Hiệu suất làm việc của nhân viên";
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-4">👨‍⚕️ Hiệu suất làm việc của nhân viên</h2>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="table-light text-center">
+            <tr>
+                <th>👤 Tên nhân viên</th>
+                <th>🧾 Số hóa đơn đã lập</th>
+                <th>💰 Tổng doanh thu</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var nv in Model)
+            {
+                <tr>
+                    <td>@nv.TenNV</td>
+                    <td class="text-center">@nv.SoHoaDon</td>
+                    <td class="text-end text-success fw-bold">@nv.TongDoanhThu.ToString("N0") đ</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

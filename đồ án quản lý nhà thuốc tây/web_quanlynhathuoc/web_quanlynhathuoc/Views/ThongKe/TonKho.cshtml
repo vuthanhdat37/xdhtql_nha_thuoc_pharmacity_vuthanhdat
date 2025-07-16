@@ -1,0 +1,31 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Báo cáo tồn kho thuốc";
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-4">📦 Báo cáo tồn kho thuốc</h2>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="table-light text-center">
+            <tr>
+                <th>💊 Tên thuốc</th>
+                <th>📊 Số lượng còn lại</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                var quantity = (int)item.SLTonKho;
+                var textClass = quantity <= 10 ? "text-danger fw-bold" :
+                quantity <= 30 ? "text-warning fw-semibold" :
+                "text-success";
+
+                <tr>
+                    <td>@item.TenThuoc</td>
+                    <td class="@textClass">@quantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

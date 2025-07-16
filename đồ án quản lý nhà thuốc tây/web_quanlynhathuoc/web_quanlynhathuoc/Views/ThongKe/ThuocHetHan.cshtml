@@ -1,0 +1,26 @@
+﻿@model IEnumerable<web_quanlynhathuoc.Models.Thuoc>
+@{
+    ViewData["Title"] = "Thuốc đã hết hạn";
+}
+
+<div class="container mt-4">
+    <h2 class="text-danger mb-4">⚠️ Danh sách thuốc đã hết hạn</h2>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="table-danger text-center">
+            <tr>
+                <th>💊 Tên thuốc</th>
+                <th>⏰ Hạn dùng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var t in Model)
+            {
+                <tr>
+                    <td>@t.TenThuoc</td>
+                    <td class="text-danger fw-bold">@t.NgayHetHan.ToString("dd/MM/yyyy")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

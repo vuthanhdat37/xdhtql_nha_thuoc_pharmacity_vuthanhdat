@@ -1,0 +1,79 @@
+﻿@model web_quanlynhathuoc.Models.CuaHang
+@{
+    ViewData["Title"] = "Chi tiết cửa hàng";
+    var cttc = ViewBag.CTTC as List<web_quanlynhathuoc.Models.CTTC>;
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-info text-white">
+            <h4 class="mb-0">📌 Thông tin cửa hàng</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Mã cửa hàng:</dt>
+                <dd class="col-sm-9">@Model.MaCH_ID</dd>
+
+                <dt class="col-sm-3">Tên cửa hàng:</dt>
+                <dd class="col-sm-9">@Model.TenCH</dd>
+
+                <dt class="col-sm-3">Địa chỉ:</dt>
+                <dd class="col-sm-9">@Model.DiaChi</dd>
+
+                <dt class="col-sm-3">Số điện thoại:</dt>
+                <dd class="col-sm-9">@Model.SDT</dd>
+
+                <dt class="col-sm-3">Tiêu chuẩn GPP:</dt>
+                <dd class="col-sm-9">@Model.TieuChuanGPP</dd>
+
+                <dt class="col-sm-3">Cơ sở vật chất:</dt>
+                <dd class="col-sm-9">@Model.CoSoVatChat</dd>
+
+                <dt class="col-sm-3">Hoạt động:</dt>
+                <dd class="col-sm-9">@Model.HoatDongNhaThuoc</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="card shadow mt-4">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">📋 Tiêu chuẩn đạt được</h5>
+        </div>
+        <div class="card-body">
+            @if (cttc != null && cttc.Any())
+            {
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Tên tiêu chuẩn</th>
+                            <th>Loại</th>
+                            <th>Ngày đánh giá</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var tc in cttc)
+                        {
+                            <tr>
+                                <td>@tc.TieuChuan.TenTC</td>
+                                <td>@tc.TieuChuan.LoaiTC</td>
+                                <td>@tc.TieuChuan.NgayDanhGia.ToString("dd/MM/yyyy")</td>
+                                <td>@tc.TrangThai</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="alert alert-warning mb-0">
+                    ⚠️ Không có tiêu chuẩn nào được ghi nhận cho cửa hàng này.
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a asp-action="Index" class="btn btn-primary">↩️ Quay lại danh sách</a>
+    </div>
+</div>

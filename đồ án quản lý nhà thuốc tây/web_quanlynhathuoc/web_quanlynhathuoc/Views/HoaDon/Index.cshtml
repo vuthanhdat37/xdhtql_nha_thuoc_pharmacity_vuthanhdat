@@ -1,0 +1,50 @@
+﻿@model List<web_quanlynhathuoc.Models.HoaDon>
+
+@{
+    ViewData["Title"] = "Danh sách hóa đơn";
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-4">🧾 Danh sách hóa đơn</h2>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="table-light text-center">
+            <tr>
+                <th>Mã HĐ</th>
+                <th>👤 Khách hàng</th>
+                <th>👨‍💼 Nhân viên lập</th>
+                <th>📅 Ngày lập</th>
+                <th>💰 Tổng tiền</th>
+                <th>📌 Trạng thái</th>
+                <th>💊 Thuốc mua</th>
+                <th>🔍 Chi tiết</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var h in Model)
+            {
+                var status = h.PhieuMuaHang?.TrangThai ?? "Không rõ";
+                var badgeClass = status == "Đã thanh toán"
+                    ? "bg-success text-white px-2 py-1 rounded"
+                    : status == "Chờ thanh toán"
+                        ? "bg-warning text-dark px-2 py-1 rounded"
+                        : "bg-secondary text-light px-2 py-1 rounded";
+
+                    <tr>
+                        <td class="text-center">@h.MaHD_ID</td>
+                        <td>@h.TenKH</td>
+                        <td>@h.NhanVien?.TenNV</td>
+                        <td>@h.NgayLap.ToString("dd/MM/yyyy")</td>
+                        <td class="text-end text-success fw-bold">@h.TongTien.ToString("N0") đ</td>
+                        <td class="text-center">
+                            <span class="@badgeClass">@status</span>
+                        </td>
+                        <td>@h.ThuocMua</td>
+                        <td class="text-center">
+                            <a asp-action="ChiTiet" asp-route-id="@h.MaHD_ID" class="btn btn-info btn-sm">🔍 Xem</a>
+                        </td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>

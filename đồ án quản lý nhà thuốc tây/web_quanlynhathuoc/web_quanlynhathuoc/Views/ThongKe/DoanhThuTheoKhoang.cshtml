@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Thống kê doanh thu theo khoảng";
+    var tu = ViewBag.TuNgay;
+    var den = ViewBag.DenNgay;
+    var tong = ViewBag.TongDoanhThu;
+    var list = ViewBag.DanhSach as List<web_quanlynhathuoc.Models.PhieuMuaHang>;
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-4">📊 Thống kê doanh thu theo khoảng</h2>
+
+    <form method="get" class="row g-3 align-items-end mb-4 border p-3 rounded shadow-sm bg-light">
+        <div class="col-md-3">
+            <label class="form-label fw-bold">Từ ngày:</label>
+            <input type="date" name="tuNgay" value="@tu" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-bold">Đến ngày:</label>
+            <input type="date" name="denNgay" value="@den" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary w-100">
+                📅 Thống kê
+            </button>
+        </div>
+    </form>
+
+    @if (list != null && list.Any())
+    {
+        <div class="alert alert-success fw-bold">
+            💵 Tổng doanh thu từ <span class="text-dark">@Convert.ToDateTime(tu).ToString("dd/MM/yyyy")</span> đến
+            <span class="text-dark">@Convert.ToDateTime(den).ToString("dd/MM/yyyy")</span>:
+            <span class="text-danger">@tong.ToString("N0") đ</span>
+        </div>
+
+        <table class="table table-bordered table-hover shadow-sm">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>Mã</th>
+                    <th>Ngày mua</th>
+                    <th>Khách hàng</th>
+                    <th>Thanh toán</th>
+                    <th>Trạng thái</th>
+                    <th>Tổng tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in list)
+                {
+                    <tr>
+                        <td class="text-center">@p.MaPMH_ID</td>
+                        <td>@p.NgayMuaHang.ToString("dd/MM/yyyy")</td>
+                        <td>@p.KhachHang?.TenKH</td>
+                        <td>@p.PTThanhToan</td>
+                        <td>
+                            <span class="badge @(p.TrangThai == "Đã thanh toán" ? "bg-success" : "bg-warning text-dark")">
+                                @p.TrangThai
+                            </span>
+                        </td>
+                        <td class="text-end text-danger">@p.TongTien.ToString("N0") đ</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (list != null)
+    {
+        <div class="alert alert-info mt-3">
+            Không có dữ liệu trong khoảng thời gian đã chọn.
+        </div>
+    }
+</div>

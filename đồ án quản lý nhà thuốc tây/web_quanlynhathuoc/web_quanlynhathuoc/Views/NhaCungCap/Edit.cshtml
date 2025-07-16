@@ -1,0 +1,24 @@
+﻿@model web_quanlynhathuoc.Models.NhaCungCap
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="MaNCC_ID" />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label>Tên nhà cung cấp</label>
+        <input asp-for="TenNCC" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Địa chỉ</label>
+        <input asp-for="DiaChi" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>SĐT</label>
+        <input asp-for="SDT" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</form>

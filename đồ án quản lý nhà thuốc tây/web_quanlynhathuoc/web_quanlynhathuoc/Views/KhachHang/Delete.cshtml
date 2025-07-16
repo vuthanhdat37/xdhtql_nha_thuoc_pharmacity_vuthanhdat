@@ -1,0 +1,12 @@
+﻿@model web_quanlynhathuoc.Models.KhachHang
+
+<h2>Xác nhận xoá khách hàng</h2>
+
+<div>
+    <h4>Bạn có chắc muốn xoá khách hàng: @Model.TenKH?</h4>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MaKH_ID" />
+        <button type="submit" class="btn btn-danger">Xoá</button>
+        <a asp-action="Index" class="btn btn-secondary">Huỷ</a>
+    </form>
+</div>

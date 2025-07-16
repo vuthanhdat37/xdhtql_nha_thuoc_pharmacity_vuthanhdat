@@ -1,0 +1,31 @@
+﻿@model web_quanlynhathuoc.Models.PhieuMuaHang
+
+@{
+    ViewData["Title"] = "Xóa Phiếu Mua Hàng";
+}
+
+<h2>Xác nhận xóa Phiếu Mua Hàng</h2>
+
+<div class="alert alert-danger">
+    Bạn có chắc chắn muốn xóa phiếu mua hàng #@Model.MaPMH_ID không?
+</div>
+
+<dl class="row">
+    <dt class="col-sm-3">Ngày mua</dt>
+    <dd class="col-sm-9">@Model.NgayMuaHang.ToString("dd/MM/yyyy")</dd>
+
+    <dt class="col-sm-3">Trạng thái</dt>
+    <dd class="col-sm-9">@Model.TrangThai</dd>
+
+    <dt class="col-sm-3">Phương thức thanh toán</dt>
+    <dd class="col-sm-9">@Model.PTThanhToan</dd>
+
+    <dt class="col-sm-3">Tổng tiền</dt>
+    <dd class="col-sm-9">@Model.TongTien.ToString("N0") đ</dd>
+</dl>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="MaPMH_ID" />
+    <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>
